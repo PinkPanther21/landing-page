@@ -1,4 +1,4 @@
-# 🚀 Fastland - Project Management Landing Page
+# 🚀  Project Management Landing Page
 
 > **The intelligent way to manage projects.** A modern, high-converting landing page built with Next.js 16 and powered by React 19. Designed to turn visitors into customers.
 
