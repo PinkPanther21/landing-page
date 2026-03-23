@@ -10,7 +10,19 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 
-const Home = () => {
+interface TeamMember {
+  id: number;
+  name: string;
+  role: string;
+  avatar: string;
+  status: string;
+}
+
+interface HomeProps {
+  team: TeamMember[];
+}
+
+const Home = ({ team }: HomeProps) => {
 
   useEffect(()=>{
    const initAOS = async ()=>{
@@ -29,7 +41,7 @@ const Home = () => {
       <Hero />
       <About />
       <WhyChoose />
-      <TeamConnect />
+      <TeamConnect team={team} />
       <Download />     
     </div>
   )
